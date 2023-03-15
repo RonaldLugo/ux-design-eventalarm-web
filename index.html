@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Alarm Web</title>
+    <script src="https://kit.fontawesome.com/d89e0bbbde.js" crossorigin="anonymous" ></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/> 
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="identity">
+          <h1>
+            <a href="#">
+              <span>Event Alarm</span>
+              <strong>Universidad de los Andes</strong>
+            </a>
+          </h1>
+        </div>
+      </header>
+      <main>
+        <section id="description">
+          <p>Te damos la bienvenida a la aplicación de alarmas que tanto esperaste.<br>Desde aquí podrás crear y gestionar:</p>
+          <ul>
+            <li>
+              <img src="images/category_clock.png" alt="Alarmas por hora">
+              <p>Alarmas por Hora</p>
+            </li>
+            <li>
+              <img src="images/category_place.png" alt="Alarmas por lugar">
+              <p>Alarmas por Lugar</p>
+            </li>
+            <li>
+              <img src="images/category_type.png" alt="Alarmas por tipo de lugar">
+              <p>Alarmas por Tipo de lugar</p>
+            </li>
+          </ul>
+        </section>
+        <section id="login">
+          <p>Para iniciar, digita el correo electrónico asociado a tu aplicación móvil</p>
+          <form action="#" method="post">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="usuario@example.com">
+            <input type="button" value="&nbsp;&nbsp;">
+          </form>
+        </section>
+        <section id="auth">
+          <p>Selecciona el medio por el cual deseas comprobar tu identidad:</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <p>Email</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <p>App  Móvil</p>
+            </li>
+          </ul>
+          <p id="authmessage">... Esperando comprobación de identidad ...</p>
+        </section>
+      </main>
+      <footer>
+        <h2>UX - Mejorando la experiencia de usuario</h2>
+        <p>Ronald Lugo</p>
+      </footer>
+    </div>
+  </body>
+</html>

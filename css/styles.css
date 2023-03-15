@@ -1,0 +1,180 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-image: url('../images/background_main.png');
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+header,
+section,
+main,
+menu,
+nav,
+footer,
+hgroup {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+#identity {
+  
+}
+
+#identity h1 a span,
+#identity h1 a strong {
+  display: none;
+}
+
+#identity h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#identity a {
+  width: 20vw;
+  height: 10vw;
+  display: block;
+  background-image: url('../images/event_alarm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  display: block;
+  text-align: center;
+}
+
+main p, label, input {
+  font-size: 1.5vw;
+}
+
+main section#description ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main section#description ul li {
+  margin: 0px 5vw;
+}
+
+main section#description ul li p {
+  margin: 0px;
+}
+
+main section#description img {
+  height: 5vw;
+}
+
+main section#login {
+  margin-top: 4vw;
+}
+
+main section#login form input[type=email] {
+  width: 30vw;
+}
+
+main section#login form input[type=button] {
+  background-image: url('../images/button_send.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  margin-left: 2vw;
+  scale: 2;
+}
+
+main section#login form input[type=button]:hover {
+  scale: 3;
+}
+
+main section#auth {
+  display: none;
+}
+
+main section#auth ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main section#auth ul li {
+  margin: 0px 5vw;
+  background-color: #5B7DCF;
+  border-radius: 1vw;
+  width: 7vw;
+  padding: 1vw 2vw;
+  color: #fff;
+}
+
+main section#auth ul li.hover {
+  background-color: #96b3ff;
+  color: #000;
+}
+
+main section#auth ul li i {
+  font-size: 5vw;
+  color: white;
+}
+
+main section#auth ul li.hover i {
+  color: #000;
+}
+
+main section#auth ul li p {
+  margin: 3px 0px;
+}
+
+main section#auth #authmessage {
+  font-size: 1vw;
+}
+
+
+footer {
+  background-color: #eee;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 110;
+}
+
+footer h2 {
+  float: left;  
+  padding: 5px 20px;
+  font-size: 12px;
+}
+
+footer p {
+  float: right;
+  padding: 5px 20px;
+  font-size: 12px;
+}
