@@ -1,9 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <title>Event Alarm Web</title>
+    <script src="https://kit.fontawesome.com/d89e0bbbde.js" crossorigin="anonymous" ></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/> 
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </head>
   <body>
-    <p>dashboard</p>
+    <div id="wrapper">
+      <header>
+        <div id="identity">
+          <h1>
+            <a href="#">
+              <span>Event Alarm</span>
+              <strong>Universidad de los Andes</strong>
+            </a>
+          </h1>
+        </div>
+        <div id="exit">
+          <a href="index.html" >
+            <span>x</span>
+            <span>Salir</span>
+          </a>
+        </div>
+      </header>
+      <main>
+        <section id="alarms">
+          <div id="list">
+            <ul id="menu-list-alarms">
+              <li id="menu-clock" class="list-clock selected">
+                <img src="images/category_clock.png" alt="Alarmas por hora">
+                <p>Hora</p>
+              </li>
+              <li id="menu-place" class="list-place selected">
+                <img src="images/category_place.png" alt="Alarmas por lugar">
+                <p>Lugar</p>
+              </li>
+              <li id="menu-type" class="list-type selected">
+                <img src="images/category_type.png" alt="Alarmas por tipo de lugar">
+                <p>Tipo</p>
+              </li>
+            </ul>
+            <div id="items">
+              <article class="item-alarm alarm-clock">
+                <h2><time>05:30</time></h2>
+                <p>Despertador 1, <em>entre semana</em></p>
+              </article>
+              <article class="item-alarm alarm-clock">
+                <h2><time>14:30</time></h2>
+                <p>Reunión de equipo, <em>entre semana</em></p>
+              </article>
+              <article class="item-alarm alarm-place">
+                <h2>Reclamar fotos</h2>
+                <p>Impresiones & Cia, <em>fin de semana</em></p>
+              </article>
+              <article class="item-alarm alarm-place">
+                <h2>Comprar libro</h2>
+                <p>Panamericana, <em>jueves, viernes</em></p>
+              </article>
+              <article class="item-alarm alarm-type">
+                <h2>Comprar medicamentos</h2>
+                <p>Droguería, <em>entre semana</em></p>
+              </article>
+              <article class="item-alarm alarm-type">
+                <h2>Sacar fotocopias</h2>
+                <p>Papelería, <em>todos los días</em></p>
+              </article>
+            </div>
+          </div>
+          <div id="content">
+            <p>contenido</p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <h2>UX - Mejorando la experiencia de usuario</h2>
+        <p>Ronald Lugo</p>
+      </footer>
+    </div>
   </body>
 </html>

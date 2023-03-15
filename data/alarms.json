@@ -1,0 +1,62 @@
+[
+  {
+    "category": "clock",
+    "time": "05:30",
+    "label": "Despertador 1",
+    "repeat": "entre semana"
+  }, 
+  {
+    "category": "place",
+    "reminder": "Reclamar fotos",
+    "label": "Impresiones & Cia",
+    "repeat": "fin de semana"
+  }, 
+  {
+    "category": "type",
+    "reminder": "Comprar medicamentos",
+    "label": "Droguería",
+    "repeat": "entre semana"
+  }, 
+  {
+    "category": "clock",
+    "time": "14:30",
+    "label": "Reunión de equipo",
+    "repeat": "entre semana"
+  }, 
+  {
+    "category": "place",
+    "reminder": "Comprar libro",
+    "label": "Panamericana",
+    "repeat": "jueves, viernes"
+  }, 
+  {
+    "category": "type",
+    "reminder": "Sacar fotocopias",
+    "label": "Papelerìa",
+    "repeat": "todos los dìas"
+  }, 
+  {
+    "category": "clock",
+    "time": "20:00",
+    "label": "Tomar la pasta",
+    "repeat": "todos los días"
+  }, 
+  {
+    "category": "place",
+    "reminder": "Comprar el pan",
+    "label": "Panaderia de la esquina",
+    "repeat": "todos los días"
+  }, 
+  {
+    "category": "type",
+    "reminder": "Retirar pensiòn",
+    "label": "Banco pensionados",
+    "repeat": "lunes, mièrcoles, viernes"
+  },
+  {
+    "category": "clock",
+    "time": "07:00",
+    "label": "Entrenamiento",
+    "repeat": "fin de semana"
+  } 
+]

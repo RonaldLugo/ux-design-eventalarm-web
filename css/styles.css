@@ -12,6 +12,7 @@ body {
   background-size: contain;
   width: 100%;
   height: 100%;
+  font-size: 1em;
 }
 
 header,
@@ -20,7 +21,9 @@ main,
 menu,
 nav,
 footer,
-hgroup {
+hgroup,
+article,
+h1, h2, h3, h4, h5, h6, p {
   margin: 0px;
   padding: 0px;
 }
@@ -29,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-ul li {
+ul > li {
   list-style: none;
 }
 
@@ -42,24 +45,28 @@ header {
   width: 100%;
 }
 
+main {
+  height: 75%;
+}
+
 #identity {
   
 }
 
-#identity h1 a span,
-#identity h1 a strong {
+#identity > h1 > a > span,
+#identity > h1 > a > strong {
   display: none;
 }
 
-#identity h1 {
+#identity > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#identity a {
+#identity > h1 > a {
   width: 20vw;
-  height: 10vw;
+  height: 8vw;
   display: block;
   background-image: url('../images/event_alarm.png');
   background-size: contain;
@@ -67,42 +74,85 @@ header {
   background-position: center;
 }
 
+header > #exit {
+  float: right;
+  margin: -10vh 3vw 0px 0px;
+  background-color: #c8cbd1;
+  border-radius: 1vw;
+  padding: 1vh  1.5vw;
+  color: #fff;
+}
+
+header > #exit > a {
+  display: inline-block;
+  text-align: center;
+}
+
+header > #exit > a > span:first-child {
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  padding: 0px;
+  font-size: 1.5vw;
+  color: #fff;
+  background-color: red;
+  border-radius: 50%;
+  content: "&#88;";
+}
+
+header > #exit > a > span:last-child {
+  display: block;
+  font-size: 0.7em;
+  margin-top: 3px;
+}
+
+
 main {
   display: block;
   text-align: center;
 }
 
-main p, label, input {
+main p, 
+main label, 
+main input {
   font-size: 1.5vw;
+  color: #29159d;
 }
 
-main section#description ul {
+main > section#description > ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 6vh;
 }
 
-main section#description ul li {
+main > section#description > ul > li {
   margin: 0px 5vw;
 }
 
-main section#description ul li p {
+main > section#description > ul > li > p {
   margin: 0px;
+  color: #221665;
 }
 
-main section#description img {
+main > section#description > ul > li > img {
   height: 5vw;
 }
 
-main section#login {
-  margin-top: 4vw;
+main > section#login {
+  margin-top: 6vh;
 }
 
-main section#login form input[type=email] {
+main > section#login > form > input[type=email] {
   width: 30vw;
+  border: solid blue 1px;
 }
 
-main section#login form input[type=button] {
+main > section#login > form {
+  margin-top: 3vh
+}
+
+main > section#login > form > input[type=button] {
   background-image: url('../images/button_send.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,21 +163,28 @@ main section#login form input[type=button] {
   scale: 2;
 }
 
-main section#login form input[type=button]:hover {
+main > section#login > form > input[type=button]:hover {
   scale: 3;
 }
 
-main section#auth {
-  display: none;
+main > section#login > form > label {
+  color:rgb(89, 89, 177);
 }
 
-main section#auth ul {
+main > section#auth,
+main > section#auth > p#authmessage {
+  display: none;
+  margin-top: 3vh;
+}
+
+main > section#auth > ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 6vh;
 }
 
-main section#auth ul li {
+main > section#auth > ul > li {
   margin: 0px 5vw;
   background-color: #5B7DCF;
   border-radius: 1vw;
@@ -136,28 +193,126 @@ main section#auth ul li {
   color: #fff;
 }
 
-main section#auth ul li.hover {
+main > section#auth > ul > li:hover {
   background-color: #96b3ff;
   color: #000;
 }
 
-main section#auth ul li i {
+main > section#auth > ul > li > i {
   font-size: 5vw;
   color: white;
 }
 
-main section#auth ul li.hover i {
+main > section#auth > ul > li.hover > i {
   color: #000;
 }
 
-main section#auth ul li p {
+main > section#auth > ul > li > p {
   margin: 3px 0px;
 }
 
-main section#auth #authmessage {
-  font-size: 1vw;
+main > section#auth > #authmessage {
+  color:rgb(89, 89, 177);
+  font-size: 0.8vw;
 }
 
+/** dashboard **/
+
+main > #alarms {
+  border: solid blue 1px;
+  margin: auto 3vw;
+  padding: 0.5vw 0px;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+main > section#alarms > #list {
+  width: 40%;
+  border-right: solid #ccc 1px;  
+}
+
+main > section#alarms > #content {
+  width: 60%;
+}
+
+main > section#alarms > #list > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0px;
+  padding: 0px;  
+}
+
+main > section#alarms > #list > ul > li {
+  height: 8vw;
+  margin: 2px 3px;
+  width: 32%;     
+  border-radius: 8px;
+  background-color: #eee;
+}
+
+main > section#alarms > #list > ul > li > p {
+  color: #221665;
+}
+
+main > section#alarms > #list > ul > li.selected {
+  background-color: #31356c;
+}
+
+main > section#alarms > #list > ul > li.selected > p {
+  color: #eee;
+}
+
+main > section#alarms > #list > ul > li:hover {
+  margin-top: 1px;
+  box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.5);
+}
+
+
+main > section#alarms > #list > ul > li > img {
+  height: 5vw;
+}
+
+main > section#alarms > #list > #items {
+  overflow-y: scroll;
+  height: 75%;
+}
+
+main > section#alarms > #list > #items > article {
+  background-color: #fff;
+  border: solid rgb(12, 12, 131) 1px;
+  border-radius: 5px;
+  text-align: left;
+  margin: 1.5vh 1.5vw;
+  padding: 1vh 1vw;
+}
+
+main > section#alarms > #list > #items > article:hover {
+  background-color: #ddd;
+}
+
+main > section#alarms > #list > #items > article > h2,
+main > section#alarms > #list > #items > article > p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1em;
+}
+
+main > section#alarms > #list > #items > article > h2 {
+  color: rgb(12, 12, 63);
+  font-weight: bold;
+}
+
+main > section#alarms > #list > #items > article > p {
+  color:rgb(43, 43, 94);
+}
+
+/** fin dashboard **/
 
 footer {
   background-color: #eee;
@@ -165,16 +320,19 @@ footer {
   bottom: 0px;
   width: 100%;
   z-index: 110;
+  height: 5vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
 }
 
-footer h2 {
-  float: left;  
+footer > h2 {
   padding: 5px 20px;
   font-size: 12px;
 }
 
-footer p {
-  float: right;
+footer > p {
   padding: 5px 20px;
   font-size: 12px;
 }
