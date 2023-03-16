@@ -48,6 +48,12 @@ $(document).ready(function ($) {
       
     });    
 
+    $("main section#alarms #list #items article")
+      .on("click", function(){
+        console.log("entra ");
+        $("#content").html($(this).html());
+      });
+
 });
 
 $('main section#alarms').ready(function() {

@@ -5,8 +5,7 @@ html {
 
 body {
   margin: 0px;
-  background-color: #fff;
-  color: #000;
+  background-color: #dee6fa;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   background-image: url('../images/background_main.png');
   background-size: contain;
@@ -77,10 +76,9 @@ main {
 header > #exit {
   float: right;
   margin: -10vh 3vw 0px 0px;
-  background-color: #c8cbd1;
   border-radius: 1vw;
   padding: 1vh  1.5vw;
-  color: #fff;
+  color: #fcfcfc;
 }
 
 header > #exit > a {
@@ -94,8 +92,8 @@ header > #exit > a > span:first-child {
   height: 2vw;
   padding: 0px;
   font-size: 1.5vw;
-  color: #fff;
-  background-color: red;
+  color: #fcfcfc;
+  background-color: #fd0404;
   border-radius: 50%;
   content: "&#88;";
 }
@@ -116,7 +114,7 @@ main p,
 main label, 
 main input {
   font-size: 1.5vw;
-  color: #29159d;
+  color: #00276C;
 }
 
 main > section#description > ul {
@@ -132,7 +130,7 @@ main > section#description > ul > li {
 
 main > section#description > ul > li > p {
   margin: 0px;
-  color: #221665;
+  color: #00276C;
 }
 
 main > section#description > ul > li > img {
@@ -145,7 +143,7 @@ main > section#login {
 
 main > section#login > form > input[type=email] {
   width: 30vw;
-  border: solid blue 1px;
+  border: solid #00003d 1px;
 }
 
 main > section#login > form {
@@ -165,10 +163,11 @@ main > section#login > form > input[type=button] {
 
 main > section#login > form > input[type=button]:hover {
   scale: 3;
+  cursor: pointer;
 }
 
 main > section#login > form > label {
-  color:rgb(89, 89, 177);
+  color:#014BA0;
 }
 
 main > section#auth,
@@ -189,22 +188,22 @@ main > section#auth > ul > li {
   background-color: #5B7DCF;
   border-radius: 1vw;
   width: 7vw;
-  padding: 1vw 2vw;
-  color: #fff;
+  padding: 1vw 2vw; 
 }
 
 main > section#auth > ul > li:hover {
   background-color: #96b3ff;
-  color: #000;
+  color: #01051f;
+  cursor: pointer;
 }
 
 main > section#auth > ul > li > i {
   font-size: 5vw;
-  color: white;
+  color: #f8f5f5;
 }
 
 main > section#auth > ul > li.hover > i {
-  color: #000;
+  color: #01051f;
 }
 
 main > section#auth > ul > li > p {
@@ -212,14 +211,15 @@ main > section#auth > ul > li > p {
 }
 
 main > section#auth > #authmessage {
-  color:rgb(89, 89, 177);
+  color:#5959b1;
   font-size: 0.8vw;
+  color: #5B7DCF;
 }
 
 /** dashboard **/
 
 main > #alarms {
-  border: solid blue 1px;
+  border: solid #00003D 1px;
   margin: auto 3vw;
   padding: 0.5vw 0px;
   border-radius: 20px;
@@ -237,6 +237,11 @@ main > section#alarms > #list {
 
 main > section#alarms > #content {
   width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: "column";
+  flex-wrap: wrap;
 }
 
 main > section#alarms > #list > ul {
@@ -270,7 +275,8 @@ main > section#alarms > #list > ul > li.selected > p {
 
 main > section#alarms > #list > ul > li:hover {
   margin-top: 1px;
-  box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.5);
+  box-shadow: 4px 5px 5px 1px rgba(58,58,60,0.5);
+  cursor: pointer;
 }
 
 
@@ -285,7 +291,7 @@ main > section#alarms > #list > #items {
 
 main > section#alarms > #list > #items > article {
   background-color: #fff;
-  border: solid rgb(12, 12, 131) 1px;
+  border: solid #00003D 1px;
   border-radius: 5px;
   text-align: left;
   margin: 1.5vh 1.5vw;
@@ -293,7 +299,9 @@ main > section#alarms > #list > #items > article {
 }
 
 main > section#alarms > #list > #items > article:hover {
-  background-color: #ddd;
+  background-color: #f6f6ff;
+  cursor: pointer;
+  box-shadow: 4px 5px 5px 1px rgba(58,58,60,0.5);
 }
 
 main > section#alarms > #list > #items > article > h2,
@@ -315,7 +323,8 @@ main > section#alarms > #list > #items > article > p {
 /** fin dashboard **/
 
 footer {
-  background-color: #eee;
+  background-color: #00003D;
+  color: #E5E5EA;
   position: fixed;
   bottom: 0px;
   width: 100%;
@@ -328,11 +337,11 @@ footer {
 }
 
 footer > h2 {
-  padding: 5px 20px;
+  padding: 18px 20px;
   font-size: 12px;
 }
 
 footer > p {
-  padding: 5px 20px;
+  padding: 18px 20px;
   font-size: 12px;
 }
